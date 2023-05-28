@@ -2,7 +2,7 @@
 
 @Artistic Carpentry | Solid Wood | Natural Oils | Yotvingia | Podlachia | Poland 
 
-`Artistic solid wood tailor-made carpentry finished with natural oils form Yotvingia, Podlahia, Poland`
+`Artistic solid wood tailor-made carpentry finished with natural oils form Yotvingia, Podlachia, Poland`
 
 
 We offer unique carved solid wood furniture to individual order in Podlasie, Scandinavian and Japanese styles.
