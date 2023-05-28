@@ -13,7 +13,7 @@ Realized products: kitchen serving/cutting boards, carved beds, openable quilted
 
 Solid wood of ash, birch, maple, oak, walnut.
 
-Style: #Hygge #Scandic #Japan #Podlahia
+Style: #Hygge #Scandic #Japan #Podlachia
 
 
 [![instagram](https://img.shields.io/badge/WARZEM-0d1117?style=for-the-badge&logo=instagram&logoColor=instagram)](https://www.instagram.com/wa.rzem/)
