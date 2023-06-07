@@ -380,9 +380,25 @@ Storona internetowa w budowie, zapytania i/lub oferty (zamówienia) proszę skł
 style="height:1000px; background-image: url(&#39;sky.png&#39;); background-repeat: no-repeat; background-attachment: fixed;
   background-size: cover;">
 <div style="text-align:center;">
-<h2>
-Carpentry from Podlachia
-</h2>
+<div class="row-outer">
+<div class="container">
+<div class="animated-heading">
+<h1>
+Give <span id="words" style="color:#7d704eff">Yourself</span> a piece of
+Podlachia
+</h1>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      (function () {
+        var words = ["Yourself","Your Beloved","Your Loved Ones","Your Friends","Generations" ],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 4000)
+      })();
+    </script>
 <h4>
 Poland
 </h4>
