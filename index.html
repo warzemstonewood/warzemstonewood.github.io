@@ -383,34 +383,86 @@ style="height:1000px; background-image: url(&#39;sky.png&#39;); background-repea
 <div class="row-outer">
 <div class="container">
 <div class="animated-heading">
+<!----FONTS----
+Dynalight-Regular.otf
+GreatVibes-Regular.otf
++Italianno-Regular-OTF.otf
+-konstytucyja_091.otf
+-Miama.otf
+
+-promocyja.otf
+Scriptina_Pro.otf
+-------------->
+<style>
+@font-face {
+  font-family: 'Italianno-Regular-OTF';
+  src: url(fonts/Italianno-Regular-OTF.otf);
+}
+h1 {
+  font-family: 'Italianno-Regular-OTF', sans-serif;
+  font-size: 4em;
+}
+a1 {
+  font-family: 'Italianno-Regular-OTF', sans-serif;
+  font-size: 3em;
+}
+a2 {
+  font-family: 'Italianno-Regular-OTF', sans-serif;
+  font-size: 2em;
+}
+</style>
+<!----FONTS------>
 <h1>
-Give <span id="words" style="color:#7d704eff">Yourself</span> a piece of
-Podlachia
+<span id="words" style="color:#7d704eff">Your Beloved</span><br> give a
+piece of Podlachia, Poland
 </h1>
 </div>
 </div>
 </div>
 <script type="text/javascript">
       (function () {
-        var words = ["Yourself","Your Beloved","Your Loved Ones","Your Friends","Generations" ],
+        var words = ["Your Beloved","Your Loved Ones","Your Friends","Yourself","Generations" ],
         i = 0;
         setInterval(function(){ $('#words').fadeOut(function(){
             $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
           }); }, 4000)
       })();
     </script>
-<h4>
-Poland
-</h4>
-<p style="color:white">
-Yotvingia
-</p>
+<a2 style="color:white;">Yotvingia</a2>
 </div>
 <div style="text-align:center; align-items: center;
       justify-content: center;">
 <iframe src="slidesIndexDeski.html" onload="javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+&quot;px&quot;;}(this));" style="height:200px;width:100%;border:none;overflow:hidden;">
 </iframe>
 <!-- <iframe width="auto" height="auto" src="slidesIndexDeski.html" seamless></iframe>-->
+<div class="row-outer">
+<div class="container">
+<div class="animated-heading">
+<p><a1><a href="cuttingboards.html" style="color:black"><span
+id="words2" style="color:black">Royal Juggler</span></a></a1>
+<a1><a href="cuttingboards.html" style="color:white"><span id="words3"
+style="color:white">Carpathian Walnut serving board</span></a></a1></p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      (function () {
+        var words2 = ["Royal Juggler", "Royal Juggler", "Royal Juggler", "Royal Juggler", "Royal Juggler","Wart birch"],
+        i = 0;
+        setInterval(function(){ $('#words2').fadeOut(function(){
+            $(this).html(words2[(i = (i + 1) % words2.length)]).fadeIn();
+          }); }, 5000)
+      })();
+    </script>
+<script type="text/javascript">
+      (function () {
+        var words3 = ["Carpathian Walnut serving board", "Carpathian Walnut serving board", "Carpathian Walnut serving board", "Carpathian Walnut serving board", "Carpathian Walnut serving board","serving board"],
+        i = 0;
+        setInterval(function(){ $('#words3').fadeOut(function(){
+            $(this).html(words3[(i = (i + 1) % words3.length)]).fadeIn();
+          }); }, 5000)
+      })();
+    </script>
 </div>
 </div>
 <!--*** -->
