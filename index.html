@@ -108,40 +108,195 @@ Button {
   Font - size : 13px;  
 }  
 </style>
-<body>
+<style>
+.home video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 000;
+}
+.home:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(3, 96, 251, 0.3);
+}
+.slider-navigation {
+  z-index: 888;
+  top: -40%;
+  left: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(60px);
+  margin-bottom: 12px;
+}
+.slider-navigation .nav-btn {
+  width: 12px;
+  height: 12px;
+  background: #00cdff00;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+.slider-navigation .nav-btn.active{
+  background: #ffffff44; /*#2696E9;*/
+}
+.slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 100px;
+  
+}
+.slider-navigation .nav-btn:hover{
+  transform: scale(1.2);
+}
+.video-slide{
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.video-slide.active{
+clip-path: circle(150.0% at 0 50%);
+  
+}
 
 
 
-<div class="home">
-        <video autoplay loop poster="movies/water3.png">
-          <!--<source src="movies/20230611_191755_3.mp4" type="video/mp4">-->
-          <source src="movies/0001-0146.mp4" type="video/mp4">
+#myBtn1 {
+  width: 0px;
+  font-size: 10px;
+  padding: 0px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn1:hover {
+  background: #ddd;
+  color: #00cdffff;
+}
+#myBtn2 {
+  width: 0px;
+  font-size: 10px;
+  padding: 0px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn2:hover {
+  background: #ddd;
+  color: #00cdffff;
+}
+</style>
+
+
+
+      <body>
+      <div class="home"
+style="background-image: url(&#39;movies/water.png&#39;);  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; display: block;">
+      <video class="video-slide" id="myVideo1" loop preload="movies/water.png">
+      <!--<source src="movies/20230611_191755_3.mp4" type="video/mp4">-->
+      <source src="movies/20230611_191755_3.mp4" type="video/mp4">
+      <!--https://github.com/warzemstonewood/warzemstonewood.github.io/releases/tag/webm/--->
+      </video>
+      <video class="video-slide" id="myVideo2" loop poster="movies/water3.png">
+          <!--<source src="movies/20230611_191755_3.mp4" type="video/mp4">  movies/20230709_162510.mp4-->
+          <source src="movies/0001-1588.mp4" type="video/mp4">
+          
            <!--https://github.com/warzemstonewood/warzemstonewood.github.io/releases/tag/webm/--->
         </video>
-        
-</script>
-        <div class="overlay"></div>
-        <div class="home-content">
-          <!--<p title="Duchy of Yotvingia, Crown of Podlachia, Poland" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'k style="text-align:center;">
-          <a href="https://warzemstonewood.github.io/">-->
-<div style="padding: 100px 0;letter-spacing: 7px; text-align:center;">
-<a href="index.html"><img src="movies/YotvingianWb.svg" 
+      <div class="overlay"></div>
+      <div class="home-content">
+      <!--<p title="Księstwo Jaćwieży, Korona Podlasia, Polska" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'k style="text-align:center;">
+      <a href="https://warzemstonewood.github.io/pl"></a></p>-->
+            <div style="padding: 100px 0;letter-spacing: 7px; text-align:center;">
+<a href="index.html"><img src="movies/YotvingianWb5.svg" 
                                                        alt="Comfortable comfortable ergonomic aesthetic furniture made of solid wood Italian walnut oak ash maple birch chairs chair cutting boards serving boards kitchen islands benches tables beds beds" 
                                                        title="The Charm of Yotvingia" 
-                                                       height="300px" style="background-color:"></a>
-<!--<h2 title="The Charm of Yotvingia" style="color:white; font-size: 40px; text-align:center;">YOTVINGIA ALLURE</h2>-->
+                                                       height="300px" width="" style="background-color:">
+                                                       <!--<a href="https://www.youtube.com/watch?v=MIniXMlrGzY" 
+                                                       style="text-decoration: none; {{"float":"right"}}">
+                                                         <div class="dot" title="Full Video on YouTube Channel Best in 1080p quality"></div></a>-->
+                                                       </a>
+<!--<h2 title="Urok Jaćwieży" style="color:white; font-size: 40px; text-align:center;">YOTVINGIA ALLURE</h2>-->
 <p><br></p>
 <a href="#collection" style="text-decoration: none; color:white;"><h3 style="color:white; font-size: 15px; text-align:center;">COLLECTION </h3>
+
 <hr style="width:15%; border-top-width:1px; border-color:white;">
 <p>
 </a></p><a style="color:white; text-decoration: none;" title="Full Video on YouTube Channel Best in 1080p quality" href="https://www.youtube.com/watch?v=MIniXMlrGzY" class="fa fa-youtube-play"></a></div>
-          <!--<img src="king10onlyFreeSerifPathENG2pn2.svg" alt="Komforotwe wygodne ergonomiczne estetyczne meble z litego drewna orzech włoski dąb jesion klon brzoza krzesła krzesło deski do krojenia deski do serwowania wyspy kuchenne ławeczki stoły łóżka łóżko Comfortable comfortable ergonomic aesthetic furniture made of solid wood Italian walnut oak ash maple birch chairs chair cutting boards serving boards kitchen islands benches tables beds beds"
-          title="Duchy of Yotvingia, Crown of Podlachia, Poland"  style="height:130px;width:100%;border:none;overflow:visible; text-align:center; border:-20px;"></a></p>-->
-                 <!--king10onlyFreeSerifPathENG-->
-          <!--<div class="middle-line"></div>
-          <button>DISCOVER</button>-->
-        </div>
+
+
+      <!--<img src="king10only3pn2.svg" alt="Komforotwe wygodne ergonomiczne estetyczne meble z litego drewna orzech włoski dąb jesion klon brzoza krzesła krzesło deski do krojenia deski do serwowania wyspy kuchenne ławeczki stoły łóżka łóżko Comfortable comfortable ergonomic aesthetic furniture made of solid wood Italian walnut oak ash maple birch chairs chair cutting boards serving boards kitchen islands benches tables beds beds"
+    title="Księstwo Jaćwieży, Korona Podlasia, Polska"  style="height:100px;width:100%;border:none;overflow:visible; text-align:center; border:-20px;"></a></p>-->
+             <!--king10onlyFreeSerifPathENG-->
+      <!--<div class="middle-line"></div>
+      <button>DISCOVER</button>-->
       </div>
+      <div class="slider-navigation" style="line-height: 0.5;"><div class="nav-btn active">&nbsp;&nbsp;<button id="myBtn1" onclick="myFunction1()"  title="The sound of the waves of the Yotvingian Lake" style="font-size:15px;">Play</button></div></div><p></p><div class="slider-navigation"><div class="nav-btn active">&nbsp;&nbsp;<button id="myBtn2" onclick="myFunction2()"  title="The noise of the river of Yotvingians"style="font-size:15px;">Play</button></div></div>
+      </div>
+      <script type="text/javascript">
+  //Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);  
+  });
+});
+
+
+
+var video1 = document.getElementById("myVideo1");
+var btn1 = document.getElementById("myBtn1");
+
+function myFunction1() {
+  if (video1.paused) {
+    video1.play();
+    btn1.innerHTML = "Pause";
+  } else {
+    video1.pause();
+    btn1.innerHTML = "Play";
+  }
+}
+var video2 = document.getElementById("myVideo2");
+var btn2 = document.getElementById("myBtn2");
+
+function myFunction2() {
+  if (video2.paused) {
+    video2.play();
+    btn2.innerHTML = "Pause";
+  } else {
+    video2.pause();
+    btn2.innerHTML = "Play";
+  }
+}
+</script>
 </body>
 
 
